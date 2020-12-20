@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+    <display-name>servletFileUpload</display-name>
+    <welcome-file-list>
+        <welcome-file>Upload.jsp</welcome-file>
+    </welcome-file-list>
+    <servlet>
+        <description></description>
+        <display-name>FileUploadDBServlet</display-name>
+        <servlet-name>FileUploadDBServlet</servlet-name>
+    <servlet-class>com.fileupload.attach.FileUploadDBServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>FileUploadDBServlet</servlet-name>
+        <url-pattern>/uploadServlet</url-pattern>
+    </servlet-mapping>
+ <servlet>
+        <description></description>
+        <display-name>DBFileDownloadServlet</display-name>
+        <servlet-name>DBFileDownloadServlet</servlet-name>
+    <servlet-class>com.fileupload.attach.DBFileDownloadServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DBFileDownloadServlet</servlet-name>
+        <url-pattern>/downloadFileServlet</url-pattern>
+    </servlet-mapping>
+<servlet>
+        <description></description>
+        <display-name>StuRegServlet</display-name>
+        <servlet-name>StuRegServlet</servlet-name>
+    <servlet-class>com.fileupload.attach.StuRegServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>StuRegServlet</servlet-name>
+        <url-pattern>/sturegServlet</url-pattern>
+    </servlet-mapping>
+</web-app>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<title>HomePage</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<style>
+@font-face {
+    font-family: myFirstFont;
+    src: url(l_10646.ttf);
+</style>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<body>
+
+
+<header class="w3-container w3-row w3-teal">
+<div class="w3-col m4" >
+ <img src="jntuk.jpg" alt="jntuk logo" style="width:45%; height: 100%;">
+</div>
+<div class="w3-col m4 w3-center"><h1>LEARN CUBE-JNTUK</h1></div>
+<div class="w3-col m4 w3-center">
+ <p>Welcome Id:xxxxxxxxxxxx<br><br>
+ <a class="w3-btn w3-teal">Logout</a>
+ </p>
+</div>
+</header>
+
+<div class="w3-topnav w3-center w3-xlarge w3-blue">
+  <a href="shomepage.html"><i class="material-icons w3-xlarge">home</i></a>
+  <a href="sresources.html">Resources</a>
+  <a href="scollegecalendar.html">College Calendar</a>
+  <a href="scircularstab.html">Circulars/Notifications</a>
+  <a href="http://jntucek.ac.in/library.php">Online Library</a>
+</div>
+
+
+
+<style>
+#main {
+    align:center;
+    width: 100%;
+    height: 300px;
+    margin: auto; border:60px ;
+    
+    
+    -webkit-transition: width 2s, height 2s, -webkit-transform 2s; /* Safari */
+    transition: width 2s, height 2s, transform 2s;
+}
+
+
+#main1 {
+	align:center;
+	 display: block;
+    margin-left: auto;
+    margin-right: auto;width:50%; height:40%
+    -webkit-transition: width 2s, height 2s, -webkit-transform 2s; /* Safari */
+    transition: width 2s, height 2s, transform 2s;
+}
+
+#main1:hover {
+    width: 70%;
+    height: 60%;
+    
+}
+
+</style>
+
+
+<div id="main">
+<div style="align:center;">
+
+<img src="homepage2.jpg" alt="homepage welcome"  id="main1" class="w3-animate-opacity">
+<h4 style="font-family: myFirstFont;align:center;margin-left: auto;
+    margin-right: auto; text-align: center;" class="w3-animate-opacity">You are successfully logged in..</h4>
+</div>
+</div>
+ 
+
+<script language="javascript" type="text/javascript">
+
+function popitup(url) {
+	newwindow=window.open(url,'name','height=800,width=1500');
+	if (window.focus) {newwindow.focus()}
+	return false;
+}
+
+ 
+</script>
+
+
+<div class="w3-container w3-center">
+<br><br>
+<a class="w3-btn w3-deep-purple w3-xlarge" href="timetable.html" onclick="return popitup('timetable.html')">Click this for Time Table and Academic calendars</a> 
+</div><br>
+
+<style>
+#footer {
+
+width: 100%;
+bottom: 0;
+height: 0em;
+position: static;
+  }
+</style>
+<div id="footer">
+<div class="w3-card-4 w3-center w3-border" id="centermessage">
+ <h4>Due to the agitations in campus, Examinations Scheduled on 20/09/2015 are cancelled.</h4>
+</div><br>
+<footer class="w3-container w3-blue-grey">
+  <p> &copy;Department Of Computer Science</p>
+</footer>
+</div>
+
+</body>
+</html> 
